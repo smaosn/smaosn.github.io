@@ -1,0 +1,18 @@
+Home Page
+
+
+About Page
+- Hobbies
+- Certificates?
+- academic portfolio
+
+Contact Me
+- email
+- link to linkedin profile
+
+Personal Projects
+- Algo trading Bot + Dashboard
+- Excel Dashboard
+- Python Games
+- Blog web app
+- public API use

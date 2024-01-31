@@ -1,0 +1,19 @@
+.row{
+    margin: 50px 100px;
+}
+
+html{
+    min-height:100vh
+}
+
+body {
+    background-image: linear-gradient(rgb(134, 197, 218), rgb(96, 219, 172)) ;
+    background-repeat: no-repeat;
+} 
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
