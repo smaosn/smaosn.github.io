@@ -1,23 +1,107 @@
 <%- include("partials/header.ejs") %>
-<div id="about">
-<h1>About Me</h1>
-<img class="profile" src="images/cats.png" alt="cat profile"/>
-<p>
-  Quam purus justo enim purus, dolor enim, ut eu lectus nam eget nibh. Ante illum nullam leo, vivamus aliquam massa
-  massainceptos fermentum porttitor, blandit vehicula, lorem in placerat ut aliquam at sociosqu. Vivamus duis
-  ultricies
-  aliquam placerat, tincidunt scelerisque imperdiet, egestas erat vel. Libero rerum. Donec ligula tristique, purus
-  montes,
-  feugiatid nunc in a nec. Duis odio, vitae sed etiam mi massa, laoreet amet purus amet rhoncus, eget sed, arcu
-  urna.
-  Maecenaswisi id, at donec enim. Proin nisl, pulvinar leo suspendisse, cum parturient non, congue leo et ut in,
-  neque ut
-  lacusauctor quam fermentum urna. Metus quis, mauris dictum aptent ultrices nulla viverra ornare, tempor elit enim
-  leo
-  donec,sed sed. Vivamus sapien facilisi, tempor arcu nulla justo sed et, eget suspendisse lacus sed nunc mattis
-  lectus.
-  Metusgravida.</p>
+<div class="main-body body">
+  <div id="about">
+    <h1>About Me</h1>
+    <img class="profile" src="images/cats.png" alt="cat profile"/>
+    <p class="about-me-text">
+    Quam purus justo enim purus, dolor enim, ut eu lectus nam eget nibh. Ante illum nullam leo, vivamus aliquam massa
+    massainceptos fermentum porttitor, blandit vehicula, lorem in placerat ut aliquam at sociosqu. Vivamus duis
+    ultricies
+    aliquam placerat, tincidunt scelerisque imperdiet, egestas erat vel. Libero rerum. Donec ligula tristique, purus
+    montes,
+    feugiatid nunc in a nec. Duis odio, vitae sed etiam mi massa, laoreet amet purus amet rhoncus, eget sed, arcu
+    urna.
+    Maecenaswisi id, at donec enim. Proin nisl, pulvinar leo suspendisse, cum parturient non, congue leo et ut in,
+    neque ut
+    lacusauctor quam fermentum urna. Metus quis, mauris dictum aptent ultrices nulla viverra ornare, tempor elit enim
+    leo
+    donec,sed sed. Vivamus sapien facilisi, tempor arcu nulla justo sed et, eget suspendisse lacus sed nunc mattis
+    lectus.
+    Metusgravida.</p>
+  </div>
+
+  <div class="new-div shuffler">
+    <img class="images" src="images/profile.jpeg"/>
+    <img class="images" src="images/profile2.jpg"/>
+    <img class="images" src="images/profile3.jpg"/>
+  </div>
+
+  <div class="shuffler">
+    <img class="photos" src="images/profile.jpeg"/>
+    <img class="photos" src="images/profile2.jpg"/>
+    <img class="photos" src="images/profile3.jpg"/>
+  </div>
+</div>
 
   <%- include("partials/footer.ejs") %>
 
-</div>
+<script>
+  const cards = document.querySelectorAll(".images")
+
+  function setClasses(){
+    const classes = ['left', 'active', 'right']
+    cards.forEach((image, index) => {
+      image.classList.add(classes[index])
+    })
+  }
+
+  function changePositions(e) {
+    const clickedImage = e.currentTarget
+    const activeImage = document.querySelector(".images.active")
+    if(clickedImage.classList.contains('active')) return;
+
+    const classesFrom = e.currentTarget.className
+    const classesTo = activeImage.className
+
+    clickedImage.className = classesTo
+    activeImage.className = classesFrom
+
+  }
+
+  cards.forEach(card => {
+    card.addEventListener("click", changePositions)
+  })
+
+  setClasses()
+</script>
+
+<script>
+  const pictures = document.querySelectorAll(".photos")
+  function setClass(){
+    const classes = ["first", "second", "third"]
+    pictures.forEach((picture, index) => {
+      picture.classList.add(classes[index])
+    })
+  }
+
+  function changePosition(){
+    const firstImage = document.querySelector(".photos.first")
+    const secondImage = document.querySelector(".photos.second")
+    const thirdImage = document.querySelector(".photos.third")
+
+    const firstImageClasses = firstImage.className
+    const secondImageClasses = secondImage.className
+    const thirdImageClasses = thirdImage.className
+
+    firstImage.className = thirdImageClasses
+    secondImage.className = firstImageClasses
+    thirdImage.className = secondImageClasses
+
+    pictures.forEach(picture => {
+      picture.removeEventListener("click", changePosition)
+      if(picture.classList.contains('first')) {
+      picture.addEventListener("click", changePosition)    
+    }
+    })
+  }
+
+  setClass()
+
+  pictures.forEach( picture => {
+    if(picture.classList.contains('first')) {
+      picture.addEventListener("click", changePosition)    
+    }
+  })
+</script>
+
+

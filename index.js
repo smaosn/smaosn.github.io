@@ -22,7 +22,6 @@ app.get("/projects", (req, res) => {
   res.render("projects.ejs");
 });
 
-
 app.listen(port, () =>{
     console.log(`Server running on port ${port}`)
 })

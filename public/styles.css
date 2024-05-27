@@ -1,19 +1,259 @@
 .row{
+    padding: 50px;
     margin: 50px 100px;
 }
 
 html{
-    min-height:100vh
+    min-height:100vh;
 }
 
 body {
-    background-image: linear-gradient(rgb(134, 197, 218), rgb(96, 219, 172)) ;
+    background-image: linear-gradient(rgb(134, 197, 218, 25%), rgb(96, 219, 172, 50%)) ;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 } 
+
+.main-body {
+    min-height: 74vh;
+}
 
 .profile {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.new-div {
+    border-bottom: 1px solid white;
+    margin: 50px 0px 100px 0px
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+.menubar {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-top: 25px;
+}
+
+.menubar * {
+    display: inline-flex;
+    margin: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+/* Home Page */
+
+/* About */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+}
+
+#profile-photo {
+    height: 390px;
+    width: 288px;
+    border-radius: 10%;
+    margin-right: 50px;
+    justify-self: end;
+}
+
+.about-text {
+    margin: 10px;
+    display: grid;
+    justify-self: start;
+}
+
+/* About Me Page */
+.about-me-paragraph {
+    margin: 20px;
+}
+
+/* Skills */
+.skills {
+    padding: 50px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skill-title {
+    margin: 20px;
+    
+}
+
+.skill-img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 20px;
+}
+
+.skill-block{
+    display: flex;
+    /* background-color: rgb(243 244 246); */
+    background-color: transparent;
+    height: fit-content;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.skill-block h3 {
+    font-style: italic;
+}
+
+
+.skill-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+/* Contact Me Page */
+.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px;
+}
+/* Left side */
+.contact-left h1 {
+    margin: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    height: 20px;
+    width: 20px;
+    margin: 20px;
+}
+
+.hyperlinks {
+    color: black;
+    text-decoration: none;
+}
+
+#resume {
+    width: 50%;
+    background-color: rgb(104, 227, 248);
+    border: 2px grey solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 15px;
+}
+
+/* Right side */
+
+.contact-right{
+    display: grid;
+}
+
+.contact-right *{
+    margin: 20px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(69, 192, 223, 0.2);
+    border: 1px gray solid;
+    border-radius: 6px;
+    padding: 10px;
+    
+}
+
+form button {
+    width: 100%;
+
+}
+
+#confirmation {
+    color: green;
+    margin-left: 40px;
+    margin-top: -10px;
+    display: block
+}
+
+/* #myCarousel {
+    margin-left: 100px;
+    margin-right: 100px;
+} */
+
+/* Projects */
+.hide {
+    display: none;
+}
+
+.selected {
+    border-bottom: 2px solid gray;
+}
+
+/* About */
+.shuffler {
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+.images {
+    height: 400px;
+    width: 290px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px;
+    position: absolute;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.images.left {
+    transform: translateX(-50%) scale(0.9);
+}
+
+.images.right {
+    transform: translateX(50%) scale(0.9);
+}
+
+.images.active {
+    z-index: 5;
+    position: relative;
+}
+
+/* Shuffler */
+.photos {
+    height: 400px;
+    height: 400px;
+    width: 290px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 30px;
+    position: absolute;
+    transition: all 1000ms ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.photos.first {
+    z-index: 10;
+    position: relative;
+}
+
+.photos.second {
+    z-index: 5;
+    transform: translateX(25%) scale(0.9);
+}
+
+.photos.third {
+    z-index: 1;
+    transform: translateX(50%) scale(0.8);
 }

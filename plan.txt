@@ -1,5 +1,5 @@
+Draft 1: Multiple separate pages
 Home Page
-
 
 About Page
 - Hobbies
@@ -16,3 +16,32 @@ Personal Projects
 - Python Games
 - Blog web app
 - public API use
+
+Draft 2: 1 Page with buttons directing to different parts of a page
+Header
+- Menu Bar
+
+About Me
+- Intro + Photo + Hobbies✅
+* Solitaire effect for 3 photos?
+
+Skills 
+- Frontend, backend, others (use button to click on different groups)✅
+
+Projects
+- Snapshot + Redirect Links + Description
+
+Contact Me
+- Message, Name, email✅
+* Make it functional
+
+Footer
+- Linkedin, IG/ Tiktok? ✅
+- Copyright✅
+
+1. Make contact me functional✅
+2. Photo Idea for about section✅
+- script to change z-position of each photo, move x-direction
+- photos stack on each others
+- animation to rearrange photos
+3. Projects section

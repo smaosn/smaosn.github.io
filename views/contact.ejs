@@ -1,4 +1,35 @@
 <%- include("partials/header.ejs") %>
-<div id="contact"></div>
+<div class="main-body contact-page body">
+    <div class="contact-left">
+        <h1>Contact Me</h1>
+        <p>
+            <img class="social-icons" src="images/social-media/gmail.png"/>
+            samsonlim850@gmail.com
+        </p>
+        <p>
+            <img class="social-icons" src="images/social-media/instagram.png">
+            smaosn
+        </p>
+        <p>
+            
+            <img class="social-icons" src="images/social-media/github-sign.png"/>
+            <a id="github-link" href="https://github.com/smaosn">
+            https://github.com/smaosn</a>
+                
+        </p>
+        <div>
+            <button id="resume" href="images/social-media/Samson's Resume.pdf">Download Resume</button>
+        </div>
+    </div>
+    <form>
+        <div class="contact-right">
+            <input placeholder="Your name" id="name"/>
+            <input placeholder="Your email" id="email"/>
+            <input placeholder="Subject" id="subject"/>
+            <textarea placeholder="Type your message here!" rows="8" id="message"></textarea>
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
 
 <%- include("partials/footer.ejs") %>
