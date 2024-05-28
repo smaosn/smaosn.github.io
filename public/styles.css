@@ -5,6 +5,7 @@
 
 html{
     min-height:100vh;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -152,6 +153,8 @@ body {
     border-radius: 6px;
     padding: 10px;
     margin: 15px;
+    color: black;
+    text-decoration: none;
 }
 
 /* Right side */
@@ -175,7 +178,6 @@ form input, form textarea{
 
 form button {
     width: 100%;
-
 }
 
 #confirmation {
@@ -256,4 +258,38 @@ form button {
 .photos.third {
     z-index: 1;
     transform: translateX(50%) scale(0.8);
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0% ;
+    }
+
+    .new-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about-text {
+        justify-self: center;
+        margin-top: 50px;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 0;
+    }
+
+    #resume {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
 }

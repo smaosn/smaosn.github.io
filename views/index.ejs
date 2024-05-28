@@ -3,7 +3,7 @@
 <div class="main-body">
 <body id="homepage">
 <!--About Intro-->
-  <div class="about new-div">
+  <div class="about new-div" id="about">
 <!--    <img id="profile-photo" src="images/profile.jpeg"> -->
     <div class="shuffler">
       <img class="photos" src="images/profile.jpeg"/>
@@ -21,7 +21,7 @@
   </div>
       
 <!-- Skills -->  
-<div class="new-div">    
+<div class="new-div" id="skills">    
 <div id="projects" class="body skill-header">
   <h2 class="skill-title selected" onclick="display('frontend')">Frontend</h2>
   <h2 class="skill-title" onclick="display('backend')">Backend</h2>
@@ -89,21 +89,21 @@
         <div class="row new-div">
           <div class="col-lg-4">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <h2 class="fw-normal">Recipes App</h2>
+            <p>Database for all your favourite recipes!</p>
+            <p><a class="btn btn-secondary" href="#">Click Here!</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <h2 class="fw-normal">Forex Trading Bot</h2>
+            <p>Algorithmic Trader that makes money on its own!</p>
+            <p><a class="btn btn-secondary" href="#">Click Here</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            <h2 class="fw-normal">Financial Stock Analyser</h2>
+            <p>Make the right investment choice with our analyser!</p>
+            <p><a class="btn btn-secondary" href="#">Click Here!</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     
@@ -111,7 +111,7 @@
         <div class="container px-4 py-5 new-div" id="custom-cards">
           <h2 class="pb-2 border-bottom">Personal Projects</h2>
       
-          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="cards">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -180,7 +180,7 @@
     
       </div>
 
-      <div class="main-body contact-page body new-div">
+      <div class="main-body contact-page body new-div" id="contact">
         <div class="contact-left">
             <h1>Contact Me</h1>
             <p>
@@ -204,8 +204,9 @@
               Samson Lim</a>
           </p>
             <div>
-                <button id="resume" href="images/social-media/Samson's Resume.pdf">Download Resume</button>
-            </div>
+                <a id="resume" target=”_blank” href="images/social-media/Samson's Resume.pdf">Download Resume</a>
+                
+              </div>
         </div>
         <div class="contact-right">
         <form name='submit-to-google-sheet'>
