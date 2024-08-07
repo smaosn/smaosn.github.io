@@ -6,6 +6,7 @@
 html{
     min-height:100vh;
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -60,7 +61,7 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px;
+    padding: 50px;
 }
 
 #profile-photo {
@@ -84,9 +85,10 @@ body {
 
 /* Skills */
 .skills {
-    padding: 50px;
-    margin: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -201,6 +203,19 @@ form button {
     border-bottom: 2px solid gray;
 }
 
+h2 {
+    text-align: center;
+}
+
+.personal-projects1 > div, .personal-projects2 > div {
+    display: grid;
+    justify-items: center;
+}
+
+.col {
+    width: 400px;
+}
+
 /* About */
 .shuffler {
     display: flex;
@@ -264,7 +279,8 @@ form button {
 @media (max-width: 1200px) {
     body {
         margin-left: 0%;
-        margin-right: 0% ;
+        margin-right: 0%;
+        background-size: 200% 200%;
     }
 
     .new-div {
@@ -276,6 +292,7 @@ form button {
     .about-text {
         justify-self: center;
         margin-top: 50px;
+        text-align: center;
     }
 
     .skills {
@@ -283,6 +300,11 @@ form button {
         grid-template-columns: 1fr;
         justify-items: center;
         margin: 0;
+    }
+
+    .projects {
+        padding: 50px;
+        margin: 50px 0px;
     }
 
     #resume {
