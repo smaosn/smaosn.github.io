@@ -315,3 +315,9 @@ h2 {
         display: none;
     }
 }
+
+@media (max-width: 600px) {
+    .col {
+        width: 200px;
+    }
+}
