@@ -184,7 +184,7 @@ form button {
 
 #confirmation {
     color: green;
-    margin-left: 40px;
+    text-align: center;
     margin-top: -10px;
     display: block
 }
@@ -210,6 +210,10 @@ h2 {
 .personal-projects1 > div, .personal-projects2 > div {
     display: grid;
     justify-items: center;
+}
+
+.personal-projects1 > div > p {
+    text-align: center;
 }
 
 .col {
