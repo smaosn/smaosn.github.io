@@ -166,7 +166,7 @@ body {
 }
 
 .contact-right *{
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 form input, form textarea{
@@ -281,6 +281,7 @@ h2 {
         margin-left: 0%;
         margin-right: 0%;
         background-size: 200% 200%;
+        zoom: 75%;
     }
 
     .new-div {
@@ -313,11 +314,5 @@ h2 {
 
     .hide {
         display: none;
-    }
-}
-
-@media (max-width: 600px) {
-    .col {
-        width: 200px;
     }
 }
